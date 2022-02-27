@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>asset-manager</title>
+</head>
+<body>
+  Signup
+  <form method='POST' action='/signup'>
+    <input name="username" type="text" placeholder="username"></input>
+    <input name="password" type="password"></input>
+    <input type='submit' value='Create User'></button>
+    <% if (error) { %>
+      <div>  Error </div>
+      <div> <%= error %> </div>
+    <% } %>
+  </form>
+</body>
+</html>
