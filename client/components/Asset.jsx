@@ -8,7 +8,7 @@ const Asset= ({
   action1,
   action2,
 }) => (
-  <div className="passwordBox">
+  <div className="assetBox">
     <LabeledText label="Prop 1" text={prop1} />
     <LabeledText label="Prop 2" text={prop2} />
     <LabeledText label="Prop 3" text={prop3} />
