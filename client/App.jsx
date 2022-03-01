@@ -1,12 +1,5 @@
- const path = require('path')
-
- /* -------------------------------------------------------------------------- */
- /*                                 check paths                                */
- /* -------------------------------------------------------------------------- */
-
- 
 import React from 'react';
-import MainContainer from path.resolve(__dirname, '/containers/MainContainer.jsx')
+import MainContainer from './containers/MainContainer';
 
 const App = () => (
   <div id="app">

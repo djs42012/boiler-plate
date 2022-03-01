@@ -1,9 +1,5 @@
-const path = require('path');
 import React from 'react';
-/* -------------------------------------------------------------------------- */
-/*                          import needed components                          */
-/* -------------------------------------------------------------------------- */
-import Asset from path.resolve(__dirname, 'pathToAssets');
+import Asset from './Asset';
 
 
 const AssetMaker = (asset, idx, props) => (

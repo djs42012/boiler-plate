@@ -9,16 +9,17 @@ module.exports = {
         filename: 'bundle.js',
     },
     plugins: [
-        new HtmlWebpackPlugin({template: 'dist/index.html'}),
+        new HtmlWebpackPlugin({template: 'index.html'}),
     ],
     resolve: {
         modules: [__dirname, 'client', 'node_modules'],
         extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
+        fallback: {
+            path: require.resolve( 'path-browserify' ),
+        },
       },
     module: {
         rules: [
-            {
-            use: [
                 {
                     test: /\.jsx?/,
                     exclude: /node_modules/,
@@ -37,8 +38,6 @@ module.exports = {
                     test: /\.png|svg|jpg|gif$/,
                     use: ['file-loader'],
                 },
-            ],
-         },
         ]
     },
 };

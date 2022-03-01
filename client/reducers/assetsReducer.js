@@ -1,9 +1,6 @@
 const path = require('path')
 
-/* -------------------------------------------------------------------------- */
-/*                                 check paths                                */
-/* -------------------------------------------------------------------------- */
-import * as types from path.resolve(__dirname, '../constants/actionTypes.js');
+import * as types from '../constants/actionTypes.js';
 
 const initialState = {
     stateItem1: 0,
