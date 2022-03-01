@@ -5,8 +5,8 @@ const router = express.Router();
 
 const assetController = require(path.resolve(__dirname,'../controllers/assetController'));
 
-router.get('/', assetController, (req, res) => {
+// router.get('/', assetController, (req, res) => {
 
-});
+// });
 
 module.exports = router;
