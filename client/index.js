@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import store from './store';
-//import styles from path.resolve(__dirname, '/scss/styles.scss');
+import styles from './scss/styles.scss';
 
 render(
   <Provider store={store}>

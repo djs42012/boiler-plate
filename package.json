@@ -31,6 +31,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.24.0",
+    "browserify": "^17.0.0",
     "express": "^4.16.3",
     "node-fetch": "^3.2.0",
     "node-sass": "^6.0.1",
@@ -71,9 +72,6 @@
     "webpack-hot-middleware": "^2.25.1"
   },
   "nodemonConfig": {
-    "ignore": [
-      "server/models/*",
-      "client/*"
-    ]
+    "ignore": []
   }
 }

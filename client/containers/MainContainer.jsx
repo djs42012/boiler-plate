@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import TotalsDisplay from '../components/TotalsDisplay';
-import AssetsContainer from './MainContainer';
+import AssetsContainer from './AssetsContainer';
 import * as actions from '../actions/actions';
  
 

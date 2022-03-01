@@ -12,7 +12,7 @@ const TotalsDisplay = ({
       <LabeledText label="Total Prop 1" text={prop1} />
       <LabeledText label="Total Prop 2" text={prop2} />
     </div>
-    <button id='sync' className="secondary" onClick={action1} disabled={prop3}>Action 1</button>
+    <button id='sync' className="secondary" onClick={action1}>Action 1</button>
   </div>
 );
 export default TotalsDisplay;
