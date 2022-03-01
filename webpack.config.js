@@ -12,8 +12,8 @@ module.exports = {
         new HtmlWebpackPlugin({template: 'dist/index.html'}),
     ],
     resolve: {
-        modules: [__dirname, "src", "node_modules"],
-        extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+        modules: [__dirname, 'client', 'node_modules'],
+        extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
       },
     module: {
         rules: [
@@ -35,7 +35,7 @@ module.exports = {
                 },
                 {
                     test: /\.png|svg|jpg|gif$/,
-                    use: ["file-loader"],
+                    use: ['file-loader'],
                 },
             ],
          },
