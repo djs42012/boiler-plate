@@ -2,7 +2,7 @@ const path = require ('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: process.env.NODE_ENV,
+    mode: "development",
     entry: './client/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -11,13 +11,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({template: 'index.html'}),
     ],
-    resolve: {
-        modules: [__dirname, 'client', 'node_modules'],
-        extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
-        fallback: {
-            path: require.resolve( 'path-browserify' ),
-        },
-      },
     module: {
         rules: [
                 {
@@ -25,8 +18,8 @@ module.exports = {
                     exclude: /node_modules/,
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/env', '@babel/react'],
-                        plugins: [],
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                        plugins: ['@babel/plugin-transform-runtime', '@babel/transform-async-to-generator'],
                     }
                 },
                 {
@@ -40,4 +33,10 @@ module.exports = {
                 },
         ]
     },
+    devServer: {
+        static: {
+          publicPath: '/',
+          directory: path.resolve(__dirname)
+        }
+      },
 };
