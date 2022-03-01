@@ -1,15 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux'
-const path = require('path');
+import { connect } from 'react-redux';
 
-
- /* -------------------------------------------------------------------------- */
- /*                                confirm paths                               */
- /* -------------------------------------------------------------------------- */
-
- import TotalsDisplay from path.resolve(__dirname, '../components/TotalsDisplay.jsx');
- import AssetsContainer from path.resolve(__dirname, './MainContainer.jsx');
- import * as actions from path.resolve(__dirname, '../actions/actions.js')
+import TotalsDisplay from '../components/TotalsDisplay';
+import AssetsContainer from './MainContainer';
+import * as actions from '../actions/actions';
  
 
 
@@ -22,7 +16,7 @@ const path = require('path');
  });
  
  const mapDispatchToProps = dispatch => ({
-   action1: () => dispatch(actions.action1),
+   action1: () => dispatch(actions.someAction1),
  });
  
  const MainContainer = props => (

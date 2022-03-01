@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 const PORT = 3003;
 
-/* --------------------------- //! check all paths -------------------------- */
 
 /* -------------------------------------------------------------------------- */
 /*                               require routers                              */
@@ -41,7 +40,7 @@ app.use('/api', apiRouter);
 /* -------------------------------------------------------------------------- */
 
 app.get('/', (req, res) => {
-  return res.status(200).sendFile(path.join(__dirname, '../client/dist/index.html'));
+  return res.status(200).sendFile(path.join(__dirname, '../index.html'));
 });
 
 
