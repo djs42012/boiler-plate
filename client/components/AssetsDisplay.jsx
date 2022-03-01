@@ -2,7 +2,7 @@ import React from 'react';
 import Asset from './Asset';
 
 
-const AssetMaker = (asset, idx, props) => (
+const assetMaker = (asset, idx, props) => (
   <Asset
     {...asset}
     key={idx}
@@ -16,7 +16,7 @@ const AssetsDisplay = props => (
   <div className="displayBox">
     <h4>Assets</h4>
     <div className="allAssets">
-      {props.assetList.map((asset, idx) => AssetMaker(asset, idx, props))}
+      {props.assetList.map((asset, idx) => assetMaker(asset, idx, props))}
     </div>
   </div>
 );

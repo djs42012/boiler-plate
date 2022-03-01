@@ -4,8 +4,8 @@
 
 
  import * as actions from '../actions/actions';
- import AssetCreator from '../components/AssetCreator'
- import AssetsDisplay from '../components/AssetsDisplay'
+ import AssetCreator from '../components/AssetCreator';
+ import AssetsDisplay from '../components/AssetsDisplay';
  
 
 
