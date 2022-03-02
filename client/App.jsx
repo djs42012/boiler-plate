@@ -1,10 +1,10 @@
 import React from 'react';
-// import MainContainer from './containers/MainContainer';
+import MainContainer from './containers/MainContainer.jsx'
 
 const App = () => (
   <div id="app">
-    {/* <MainContainer /> */}
-    <h1>App</h1>
+      <h1>App</h1>
+      <MainContainer/>
   </div>
 );
 

@@ -1,19 +1,17 @@
 import React from 'react';
 
-const AssetCreator = ({
-  value1,
-  action1,
-  action2,
-}) => (
+const AssetCreator = () => (
   <div>
-    <form onSubmit={action2}>
-      <input
-        id="value-1"
-        value={value1}
-        onChange={e => action1(e.target.value)}
-      />
-      <button id='action-2' className="primary" type="submit">Action 2</button>
-    </form>
+    <h4>Asset Creator</h4>
+    <div>
+      <form onSubmit={console.log('you clicked me')}>
+        <input
+          id="value-1"
+          onChange={e => action1(e.target.value)}
+        />
+        <button id='action-2' className="primary" type="submit">Action</button>
+      </form>
+    </div>
   </div>
 );
 

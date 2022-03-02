@@ -1,10 +1,15 @@
 import React from 'react';
 
 const LabeledText = ({ label, text }) => (
-  <p>
-    <strong>{`${label}: `}</strong>
-    {text}
-  </p>
+  <div>
+  <h6>Labeled Text</h6>
+    <div>
+      <p>
+        <strong>{`${label}: `}</strong>
+        {text}
+      </p>
+    </div>
+  </div>
 );
 
 export default LabeledText;

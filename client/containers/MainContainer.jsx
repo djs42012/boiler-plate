@@ -1,33 +1,20 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-import TotalsDisplay from '../components/TotalsDisplay';
-import AssetsContainer from './AssetsContainer';
-import * as actions from '../actions/actions';
+import TotalsDisplay from '../components/TotalsDisplay.jsx';
+import AssetsContainer from './AssetsContainer.jsx';
+//import * as actions from '../actions/actions.js';
+//import { connect } from 'react-redux';
  
 
-
- const mapStateToProps = ({
-   assets: { stateItem1, stateItem2, stateItem3 },
- }) => ({
-   stateItem1,
-   stateItem2,
-   stateItem3,
- });
  
- const mapDispatchToProps = dispatch => ({
-   action1: () => dispatch(actions.someAction1),
- });
- 
- const MainContainer = props => (
-   <div className="container">
+ const MainContainer = () => (
+   <div className="mainContainer">
+     <h2>Main Container</h2>
      <div className="outerBox">
-       <h1 id="header">Asset's Asset Manager</h1>
-       <TotalsDisplay {...props} />
+       <TotalsDisplay />
        <AssetsContainer />
      </div>
    </div>
  );
  
- export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
+ export default MainContainer;
  

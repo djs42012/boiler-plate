@@ -1,20 +1,17 @@
 import React from 'react';
-import LabeledText from './LabeledText';
+import LabeledText from './LabeledText.jsx';
 
-const Asset= ({
-  prop1,
-  prop2,
-  prop3,
-  action1,
-  action2,
-}) => (
+const Asset= () => (
   <div className="assetBox">
-    <LabeledText label="Prop 1" text={prop1} />
-    <LabeledText label="Prop 2" text={prop2} />
-    <LabeledText label="Prop 3" text={prop3} />
+    <h3>Asset</h3>
+    <div>
+      <LabeledText label="Prop 1" text='text' />
+      <LabeledText label="Prop 2" text='text' />
+      <LabeledText label="Prop 3" text='text' />
+    </div>
     <div className="flex">
-      <button className='action1' onClick={action1}>+</button>
-      <button className='action2' onClick={action2}>-</button>
+      <button className='action1'>Action</button>
+      <button className='action2'>Action</button>
     </div>
   </div>
 );
