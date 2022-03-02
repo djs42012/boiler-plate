@@ -11,8 +11,7 @@ assetController.getAssets = (req, res, next) => {
       return resolve(result);
     })
       .then((data) =>{
-          console.log(data);
-          '
+        console.log(data);
         res.locals.passwrords = data.rows;
         return next();
       })
