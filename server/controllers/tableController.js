@@ -12,7 +12,6 @@ tableController.getTables = (req, res, next) => {
       return resolve(result);
     })
       .then((tables) =>{
-          console.log(Array.isArray(tables.rows));
           res.locals.tables = tables.rows;
         return next();
       })
